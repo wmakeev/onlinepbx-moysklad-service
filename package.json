@@ -1,0 +1,42 @@
+{
+  "name": "onlinepbx-moysklad-service",
+  "version": "0.1.0",
+  "description": "Сервис позволяющий интегрировать сервисы OnlinePBX и МойСклад",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wmakeev/onlinepbx-moysklad-service"
+  },
+  "keywords": [
+    "onlinepbx",
+    "moysklad",
+    "pbx",
+    "adapter",
+    "crm",
+    "service"
+  ],
+  "author": "Vitaliy V. Makeev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wmakeev/onlinepbx-moysklad-service/issues"
+  },
+  "homepage": "https://github.com/wmakeev/onlinepbx-moysklad-service",
+  "devDependencies": {
+    "@types/express": "^4.0.33",
+    "dotenv": "^2.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "onlinepbx-crm-adapter": "^0.1.1",
+    "onlinepbx-infophon": "^0.1.2",
+    "onlinepbx-moysklad": "^0.4.1",
+    "onlinepbx-telegram": "^0.1.2",
+    "serve-favicon": "^2.3.0",
+    "serve-static": "^1.11.1"
+  }
+}
