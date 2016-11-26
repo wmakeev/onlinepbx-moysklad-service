@@ -50,7 +50,9 @@ server.post('/addon', (req, res, next) => {
 // - telegram модуль подключаем только для обработчика http комманд, чтобы уведомление не приходило
 //   повторно в момент активации аддона, т.к. это совершенно независимые запросы
 // - модуль onlinepbx-telegram требудет асинхронной инициализации
-CrmAdapter.compose(onlinepbxTelegram).create()
+CrmAdapter.compose(onlinepbxTelegram).create({
+  translitHttpSetNameCommand: true // Некторые трубки не отображают кириллицу
+})
   .then(httpAdapter => {
     // Обработчик событий http-комманд
     server.post('/http', (req, res, next) => {
