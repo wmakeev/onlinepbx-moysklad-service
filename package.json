@@ -1,6 +1,6 @@
 {
   "name": "onlinepbx-moysklad-service",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Сервис позволяющий интегрировать сервисы OnlinePBX и МойСклад",
   "main": "server.js",
   "scripts": {
